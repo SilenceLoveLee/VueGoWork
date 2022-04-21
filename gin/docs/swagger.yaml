@@ -1,0 +1,217 @@
+definitions:
+  app.Response:
+    properties:
+      code:
+        type: integer
+      data: {}
+      msg:
+        type: string
+    type: object
+info:
+  contact: {}
+paths:
+  /selectByArtType:
+    get:
+      parameters:
+      - description: School_name
+        in: query
+        name: school_name
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get UniversityByArtType
+  /selectByCooperateType:
+    get:
+      parameters:
+      - description: School_name
+        in: query
+        name: school_name
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get UniversityByCooperateType
+  /selectByFinanceType:
+    get:
+      parameters:
+      - description: School_name
+        in: query
+        name: school_name
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get UniversityByFinanceType
+  /selectByLanguageType:
+    get:
+      parameters:
+      - description: School_name
+        in: query
+        name: school_name
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get UniversityByLanguageType
+  /selectByLawType:
+    get:
+      parameters:
+      - description: School_name
+        in: query
+        name: school_name
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get UniversityByLawType
+  /selectByMedicineType:
+    get:
+      parameters:
+      - description: School_name
+        in: query
+        name: school_name
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get UniversityByMedicineType
+  /selectByMinBanType:
+    get:
+      parameters:
+      - description: School_name
+        in: query
+        name: school_name
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get UniversityByMinBanType
+  /selectByMinZuType:
+    get:
+      parameters:
+      - description: School_name
+        in: query
+        name: school_name
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get UniversityByMinZuType
+  /selectBySportsType:
+    get:
+      parameters:
+      - description: School_name
+        in: query
+        name: school_name
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get UniversityBySportsType
+  /selectByZongBang:
+    get:
+      parameters:
+      - description: School_name
+        in: query
+        name: school_name
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get UniversityByZongBang
+  /selectUniversity:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/app.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/app.Response'
+      summary: Get University
+swagger: "2.0"
